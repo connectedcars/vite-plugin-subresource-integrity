@@ -48,7 +48,7 @@ const subresourceIntegrityPlugin = (
           .digest()
           .toString('base64')
 
-        script.attribs.integitry = `${options.algorithm.toLowerCase()}-${hash}`
+        script.attribs.integrity = `${options.algorithm.toLowerCase()}-${hash}`
       }
 
       return doc.html()
